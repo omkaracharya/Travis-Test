@@ -18,4 +18,8 @@ public class Calculator {
 		return a * b;
 	}
 
+	public int absolute(int a) {
+		return Math.abs(a);
+	}
+
 }
