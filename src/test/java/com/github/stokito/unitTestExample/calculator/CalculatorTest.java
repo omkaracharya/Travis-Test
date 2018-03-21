@@ -57,3 +57,4 @@ public class CalculatorTest {
 		calculator.divide(6, 0);
 	}
 }
+
