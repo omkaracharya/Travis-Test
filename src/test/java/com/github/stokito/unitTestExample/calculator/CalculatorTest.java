@@ -27,16 +27,16 @@ public class CalculatorTest {
 		}
 	}
 
-	@Test
-	public void testFlaky() {
-		Calculator calculator = new Calculator();
-		int now = Calendar.getInstance().get(Calendar.SECOND);
-		for( int i = 0; i < Integer.MAX_VALUE/50; i++ )
-		{
-			int result = Calendar.getInstance().get(Calendar.SECOND) - calculator.sum(now,0);
-			Assert.assertTrue("positive:" + result, result >= 0);
-		}
-	}
+	// @Test
+	// public void testFlaky() {
+	// 	Calculator calculator = new Calculator();
+	// 	int now = Calendar.getInstance().get(Calendar.SECOND);
+	// 	for( int i = 0; i < Integer.MAX_VALUE/50; i++ )
+	// 	{
+	// 		int result = Calendar.getInstance().get(Calendar.SECOND) - calculator.sum(now,0);
+	// 		Assert.assertTrue("positive:" + result, result >= 0);
+	// 	}
+	// }
 
 
 	@Test
