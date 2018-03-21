@@ -56,5 +56,11 @@ public class CalculatorTest {
 		Calculator calculator = new Calculator();
 		calculator.divide(6, 0);
 	}
+
+	@Test
+	public void testAbsolute() {
+		Calculator calculator = new Calculator();
+		Assert.assertEquals(10, calculator.absolute(-10));
+	}
 }
 
